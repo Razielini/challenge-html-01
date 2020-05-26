@@ -1,7 +1,12 @@
 import React from 'react';
+import '../styles/components/Content.styl';
 
-const Content = () => {
-  return <div className="content">Esto es un Content</div>;
+const Content = ({ children }) => {
+  return (
+    <div className="content">
+      <div className="content-grid">{children}</div>
+    </div>
+  );
 };
 
 export default Content;
