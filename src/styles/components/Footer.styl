@@ -1,6 +1,98 @@
 footer
   grid-area: footer
   display: grid
-  grid-template-columns: 100px 1fr 200px
-  div
-    padding: 10px
+  grid-template-columns: 200px 1fr 300px
+  grid-template-areas: "LOGO LINKS NEWSLETTER"
+  background: #1D1F24
+  padding: 30px 20px 15px 20px
+  .LOGO
+    grid-area: LOGO
+  .LINKS
+    grid-area: LINKS
+  .NEWSLETTER
+    grid-area: NEWSLETTER
+  .Footer-logo
+    font-size: 14px
+    font-weight: 500
+    opacity 0.7
+    color: #FFF
+    p
+      margin: 0
+  .Footer-newsletter
+    display flex
+    flex-direction: column
+    p
+      font-family: Lato
+      opacity 0.7
+      font-weight: 400
+      font-size: 14px
+      color #FFF
+      margin-top: 0
+      img
+        width: 16px
+        margin: 0 5px
+    input
+      padding: 10px
+      min-width 200px
+      vertical-align: bottom 
+      height 40px
+      box-sizing: border-box
+      border: transparent
+    button
+      background: #FF565C
+      padding: 11px 15px
+      border: transparent
+      color: #FFF
+      font-family: 'Oswald', sans-serif
+      font-weight: 400
+      font-size: 12px
+      letter-spacing: 1.25px
+      vertical-align: bottom
+      height 40px
+      box-sizing: border-box
+  .Footer-links
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 30px)
+    grid-template-areas: "TECH LEADER NEW ENTER" "IDEA VIDEO FINAN";
+    a
+      font-size: 16px
+      color: #FFF
+      letter-spacing: 1px
+      text-decoration: none
+      font-family: 'Oswald', sans-serif
+      font-weight: 300
+    :hover
+      text-decoration: underline
+      .TECH
+        grid-area: TECH
+      .IDEA
+        grid-area: IDEA
+      .LEADER
+        grid-area: LEADER
+      .VIDEO
+        grid-area: VIDEO
+      .NEW
+        grid-area: NEW
+      .FINAN
+        grid-area: FINAN
+      .ENTER
+        grid-area: ENTER
+@media (min-width: 768 px) and (max-width: 1024px)
+  footer
+    grid-area: footer
+    display: grid
+    grid-template-columns: 200px 1fr
+    grid-template-rows: 100px auto
+    grid-template-areas: "LOGO LINKS" "NEWSLETTER NEWSLETTER"
+  .Footer-newsletter
+    padding-top 20px
+    flex-direction: row-reverse !important
+    justify-content: flex-end
+    align-items: center
+    button
+      margin-right: 20px
+  .Footer-links
+    grid-template-columns: repeat(3, 1fr) !important
+    grid-template-rows: repeat(3, 30px) !important
+    grid-template-areas: "TECH LEADER NEW" "IDEA VIDEO FINAN" "ENTER"
