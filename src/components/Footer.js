@@ -37,16 +37,40 @@ const Footer = () => {
         <p>
           Follow Us:
           <span>
-            <img alt="facebook" src="../resources/imgs/facebook.png" />
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="facebook" src="../resources/imgs/facebook.png" />
+            </a>
           </span>
           <span>
-            <img alt="instagram" src="../resources/imgs/instagram.png" />
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="instagram" src="../resources/imgs/instagram.png" />
+            </a>
           </span>
           <span>
-            <img alt="pinterest" src="../resources/imgs/pinterest.png" />
+            <a
+              href="https://www.pinterest.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="pinterest" src="../resources/imgs/pinterest.png" />
+            </a>
           </span>
           <span>
-            <img alt="twitter" src="../resources/imgs/twitter.png" />
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="twitter" src="../resources/imgs/twitter.png" />
+            </a>
           </span>
         </p>
         <div>
