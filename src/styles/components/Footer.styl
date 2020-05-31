@@ -96,3 +96,22 @@ footer
     grid-template-columns: repeat(3, 1fr) !important
     grid-template-rows: repeat(3, 30px) !important
     grid-template-areas: "TECH LEADER NEW" "IDEA VIDEO FINAN" "ENTER"
+@media screen and (max-width: 767px)
+  footer
+    grid-area: footer
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-areas: "LOGO" "NEWSLETTER" "LINKS"
+  .Footer-newsletter
+    padding-top 20px
+    flex-direction: column-reverse !important
+    justify-content: flex-start
+    align-items: end
+    p
+      margin: 20px 0 !important
+    button
+      margin-right: 20px
+  .Footer-links
+    grid-template-columns: repeat(2, 1fr) !important
+    grid-gap: 20px;
+    grid-template-areas: "TECH VIDEO" "IDEA NEW" "ENTER FINAN" "LEADER"
