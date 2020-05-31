@@ -5,12 +5,12 @@ import Logo from './Logo';
 const Footer = () => {
   return (
     <footer>
-      <div className="Footer-logo LOGO">
+      <div className="Footer-logo">
         <Logo klass="footer" />
         <p>@ 2018 Deck</p>
         <p>Component based UI Kit</p>
       </div>
-      <div className="Footer-links LINKS">
+      <div className="Footer-links">
         <a href="https://github.com/Razielini" className="TECH">
           TECHNOLOGY
         </a>
@@ -33,7 +33,7 @@ const Footer = () => {
           ENTERTAINMENT
         </a>
       </div>
-      <div className="Footer-newsletter NEWSLETTER">
+      <div className="Footer-newsletter">
         <p>
           Follow Us:
           <span>
