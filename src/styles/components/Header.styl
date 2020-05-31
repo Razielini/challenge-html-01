@@ -1,7 +1,8 @@
 header
   grid-area: header
   display: grid
-  grid-template-columns: 150px 1fr 150px
+  grid-template-columns: 80px 1fr 80px
+  padding: 10px 0
   grid-gap: 20px
   .Header-logo
     font-size: 24px
@@ -11,9 +12,7 @@ header
     align-items: center
     span 
       color: #FF565C
-  div
-  nav
-    padding: 10px
+  .Header-nav
     ul
       list-style none
       padding-inline-start: 0
@@ -30,7 +29,7 @@ header
         opacity 1
 @media screen and (max-width: 767px)
   header
-    grid-template-columns: 150px 120px;
+    grid-template-columns: 80px 80px;
     justify-content: space-between;
-    nav
+    .Header-nav
       display: none
