@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/Header.styl';
 import Logo from './Logo';
+import Hamburger from './Hamburguer';
 
 const Header = () => {
   return (
@@ -33,7 +34,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div>HAM</div>
+      <Hamburger />
     </header>
   );
 };
