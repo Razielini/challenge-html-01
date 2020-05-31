@@ -9,7 +9,7 @@ const Header = () => {
       <div className="Header-logo">
         <Logo />
       </div>
-      <nav>
+      <nav className="Header-nav">
         <ul>
           <li>
             <a href="https://github.com/Razielini">TECHNOLOGY</a>
